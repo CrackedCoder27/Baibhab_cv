@@ -1,0 +1,222 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{letterpaper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+%%%%%%%%%%
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{\textit{Baibhab Karmakar}}
+\fancyhead[R]{\textit{August 2026}}
+\thispagestyle{empty} % Remove header from the first page
+
+% Header
+\begin{flushleft}
+\textbf{\LARGE Baibhab Karmakar}\\[2pt] % Name
+Master's Student in Earth Sciences, IISER Kolkata, Kolkata, India
+\\ \href{mailto:bk22ms064@iiserkol.ac.in}{bk22ms064@iiserkol.ac.in} | \href{tel:+918250734897}{+91 8250734897} | \href{https://www.linkedin.com/in/baibhab-karmakar-237249195/}{LinkedIn} % Contact info
+\end{flushleft}
+
+% Research Interests
+\section*{RESEARCH INTERESTS}
+\noindent
+Over the past two years, I have worked on earthquake source characterization, slip inversion, surface-wave amplification, and machine learning-based earthquake relocation, using observational and computational approaches to analyse seismic data.  I aim to deepen my expertise through PhD research in understanding earthquake processes, seismic wave propagation, and Earth structure, with a particular interest in computational geophysics and data-driven methods in seismology.
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{Indian Institute of Science Education and Research (IISER) Kolkata}, Kolkata, India \hfill 2026 -- Present\\
+Master's Student in Earth Sciences \\
+Thesis Title: Earthquake Relocation Using Machine Learning % Additional info
+
+\noindent\\
+\textbf{Indian Institute of Science Education and Research (IISER) Kolkata}, Kolkata, India \hfill 2022 -- 2026\\
+BS-MS, Earth Sciences Major and Computer Science Minor \hfill CGPA: 8.09/10.00
+
+\noindent\\
+\textbf{Higher Secondary Examination} \hfill 2022\\
+Score: 95.8\%
+
+\noindent\\
+\textbf{Madhyamik Examination} \hfill 2020\\
+Score: 96.29\%
+
+% Research Experience Section
+\section*{RESEARCH EXPERIENCE}
+\noindent
+\textbf{Computational Seismology Laboratory, IISER Kolkata} \hfill Kolkata, India\\
+\textit{Master's Researcher, under Prof. Supriyo Mitra} \hfill 2026 | Present
+\begin{itemize}
+    \item Applying QSeek, a machine-learning-based earthquake detection and localization framework, to continuous seismic data from the Kashmir Himalaya.
+    \item Combining neural-network phase picking (via SeisBench pickers such as PhaseNet/EQTransformer) with stacking-migration and adaptive octree localization to build a data-driven earthquake catalog for the region.
+    \item Benchmarking detection completeness and location accuracy of the QSeek-derived catalog against the existing regional catalog to characterize seismicity patterns in the Kashmir Himalaya. 
+\end{itemize}
+\noindent
+\textbf{Institut de Physique du Globe de Paris (IPGP)} \hfill Paris, France\\
+\textit{Summer Research Intern, under Dr. Martin Vall\'ee} \hfill June 2026 | July 2026
+\begin{itemize}
+    \item Performed joint kinematic slip inversions for the 2015 and 2025 Charlie-Gibbs Transform Fault earthquakes using teleseismic $P$/$SH$ waveforms and moment-constrained Empirical Green's Function relative source time functions (RSTFs), resolving unilateral westward rupture propagation in both events.
+    \item Used RBF interpolation and polygon overlap analysis to quantify asperity overlap and disjointness  between the two ruptures at different slip thresholds.
+    \item Revealed contrasting rupture patterns on the Charlie-Gibbs fault, with the 2015 earthquake dominated by a localized high-slip asperity, while the 2025 event exhibited more distributed slip and limited re-slip at the 2015 peak-slip region.
+    \item Improved the seismic-data fit by incorporating spatially variable fault dip as an inversion parameter, while noting that the resulting dip distribution lacks independent observational constraints.
+\end{itemize}
+
+\noindent
+\textbf{IISER Pune} \hfill Pune, India\\
+\textit{Research Intern} \hfill 2025
+\begin{itemize}
+    \item Investigated surface-wave amplification across the Shillong Plateau–Bengal Basin boundary using 1D shear-wave velocity profiles, focusing on the effects of low shear velocities and impedance contrasts at the basin edge.
+    \item Modeled surface-wave propagation using SWRT (semi-analytical solutions across transversely aligned vertical discontinuities, incorporating higher-mode conversion) alongside SPECFEM2D full-waveform simulations; both methods predicted 2--5$\times$ higher amplitudes in the basin than in crystalline terrain over 0.01--0.15 Hz.
+    \item Validated model predictions against a regional earthquake recorded at both sites, finding good agreement on the transverse component; presented as a poster at AGU Annual Meeting 2025.
+\end{itemize}
+\noindent
+\textbf{Environmental Science Laboratory, IISER Kolkata} \hfill Kolkata, India\\
+\textit{Research Assistant} \hfill 2024
+\begin{itemize}
+    \item Assisted in environmental data collection and analysis on pesticide contamination in milk samples.
+\end{itemize}
+
+% Teaching Experience Section
+\section*{TEACHING EXPERIENCE}
+\noindent
+\textbf{IISER Kolkata} \hfill Kolkata, India\\
+\textit{Teaching Assistant - Geophysics and Hydrology} \hfill Autumn 2026 - Present
+\begin{itemize}
+    \item Assisting in tutorials and practical sessions for undergraduate students.
+    \item Supporting students in conceptual understanding and problem-solving in geophysics and hydrology.
+\end{itemize}
+
+\noindent
+\textbf{IISER Kolkata} \hfill Kolkata, India\\
+\textit{Teaching Assistant - Introduction to Earth Science} \hfill Autumn 2025
+\begin{itemize}
+    \item Assisted in conducting tutorials and practical sessions for undergraduate students.
+    \item Supported grading, doubt-clearing sessions, and conceptual understanding of core Earth Science topics.
+\end{itemize}
+
+% Projects Section
+\section*{PROJECTS}
+\noindent
+\textbf{Receiver Function Tool} \hfill IISER Kolkata, India\\
+\textit{Self-directed Computational Project}
+   \hfill 2025
+
+\begin{itemize}
+     \item Built an automated and interactive tool for crustal thickness estimation using receiver-function analysis.
+     \item Developed workflows for seismic interpretation and theoretical travel-time modelling.
+\end{itemize}
+
+\section*{PUBLICATIONS}
+\noindent
+\textbf{Journal paper}\\
+\textup{In Preparation}
+\begin{itemize}
+    \item Karmakar, B., Vall\'ee, M.. Ten-year fault reactivation on the Charlie-Gibbs Transform Fault: joint kinematic inversion and slip asperity distribution analysis of the 2015 and 2025 earthquakes (working title, in preparation).
+\end{itemize}
+
+\section*{PRESENTATIONS}
+\noindent
+\textbf{Poster Presentation - AGU Annual Meeting 2025}\\
+\textit{American Geophysical Union (AGU)}
+\begin{itemize}
+    \item Presented my work on seismic surface wave amplification in the Bengal Basin.
+    \item Discussed observational and modelling results with an international research audience.
+\end{itemize}
+\section*{SELECTED COURSES}
+\begin{tabularx}{1\textwidth}{
+    >{\raggedright\arraybackslash}X
+    >{\raggedright\arraybackslash}X }
+\textbf{Master's Courses} & \textbf{Bachelor's Courses} \\[3pt]
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+    \item Master's Thesis Research in Computational Seismology
+\end{itemize}
+\vspace{6pt}
+\textbf{Additional Courses}
+\begin{itemize}
+    \item Data Science and Machine Learning
+    \item Artificial Intelligence for Data Science
+\end{itemize}
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+    \item Seismology
+    \item Seismology Lab
+    \item Geophysics
+    \item Waves and Optics
+    \item Structural Geology
+    \item Geodynamics
+\end{itemize}
+\end{minipage}
+\end{tabularx}
+\section*{AWARDS \& FELLOWSHIPS}
+\textbf{Innovation in Science Pursuit for Inspired Research (INSPIRE)}  \hfill India\\ 
+Department of Science and Technology, Government of India \hfill 2022 -- Present\\ \\
+\textbf{JBNSTS Junior Fellow}  \hfill India\\ 
+Jagadis Bose National Science Talent Search \hfill 2020 -- 2022
+\section*{SKILLS}
+\begin{itemize}
+    \item \textbf{Programming:} Python, C, MATLAB, Shell scripting
+    \item \textbf{Python Libraries:} NumPy, Pandas, SciPy, Matplotlib, ObsPy, SeisBench, Sklearn, TensorFlow and etc.
+    \item \textbf{Geophysical Software:} SAC, SPECFEM2D, SWRT, ASPECT(basic), Pyrocko
+    \item \textbf{Machine Learning:} Supervised and unsupervised learning, data-driven modelling
+    \item \textbf{Other:} Data Structures and Algorithms, Git, LaTeX, Microsoft Office Suite and etc.
+\end{itemize}
+
+\section*{OTHER EXPERIENCES}
+\noindent
+\textbf{Library Management System}  \hfill IISER Kolkata, India\\
+\textit{Software Project} \hfill 2024
+\begin{itemize}
+    \item Developed an interactive library management system in C.
+    \item Implemented book tracking and user management functionality.
+\end{itemize}
+
+\noindent
+\textbf{Yuva Sangam Program (Phase 4)} \hfill Hariyan, India\\
+\textit{Participant} \hfill  2024
+
+% \section*{ENGLISH \& GRE TESTS}
+%     \begin{tabularx}{1\textwidth}{
+%     >{\raggedright\arraybackslash}X 
+%    >{\raggedright\arraybackslash}X }
+%       \textbf{IELTS/TOEFL:} \# score (overall)&   \textbf{GRE General Test:}\\ \\
+%     Listening: \#XX | Reading: \#XX & Quant: \#XXX | Verbal: \#XXX\\
+%     Speaking: \#XX   | Writing: \#XX& Analytical writing: \#X\\
+%     Test date: \#Month \#Year &Test date: \#Month \#Year
+%     \end{tabularx}
+
+
+\section*{REFERENCES}
+\textbf{Prof. Supriyo Mitra}\\
+\textit{Faculty, Department of Earth Sciences, IISER Kolkata, Kolkata, India}\\
+E-mail: \href{mailto:supriyomitra@iiserkol.ac.in}{supriyomitra@iiserkol.ac.in}\\
+Scholar Profiles: \href{https://www.iiserkol.ac.in/~supriyomitra/}{Personal Page} - \href{https://scholar.google.com/citations?user=_zF1Zr8AAAAJ&hl=en}{Google Scholar} \\ \\
+\textbf{Dr. Martin Vall\'ee}\\
+\textit{Researcher, Institut de Physique du Globe de Paris (IPGP), Paris, France}\\
+E-mail: \href{mailto:vallee@ipgp.fr}{vallee@ipgp.fr}\\
+Scholar Profiles: \href{https://www.ipgp.fr/~vallee/}{Personal Page} - \href{https://scholar.google.com/citations?user=d39g-UgAAAAJ&hl=fr}{Google Scholar}  \\ \\
+\textbf{Dr. Arjun Datta}\\
+\textit{Assistant Professor, Department of Earth and Climate Science, Indian Institute of Science Education and Research (IISER) Pune, Pune, India}\\
+E-mail: \href{mailto:arjundatta@iiserpune.ac.in }{arjundatta@iiserpune.ac.in }\\
+Scholar Profiles: \href{https://sites.google.com/view/arjun-datta}{Personal Page} | \href{https://scholar.google.com/citations?hl=en&user=tgjqIncAAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar} \\ \\
+% End document
+\end{document}

@@ -1,8 +1,8 @@
-PWD /home/bk22ms064/Work/Personal/cv
+PWD /home/bk22ms064/Work/Personal/Baibhab_cv
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/bk22ms064/Work/Personal/cv/Baibhab_cv.tex
+INPUT /home/bk22ms064/Work/Personal/Baibhab_cv/Baibhab_cv.tex
 OUTPUT Baibhab_cv.log
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/extsizes/extarticle.cls
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/extsizes/extarticle.cls
